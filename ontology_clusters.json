@@ -1137,18 +1137,6 @@
         "description": "Core ODP of the CEON ontology network defining aspects of the process concept."
       },
       {
-        "prefix": "spt",
-        "label": "SPITFIRE event/sensor",
-        "url": "http://spitfire-project.eu/ontology/ns",
-        "description": "SPITFIRE Ontology aligning DOLCE+DnS Ultralite, W3C SSN, and Event Model-F for sensor/IoT events."
-      },
-      {
-        "prefix": "tvc",
-        "label": "TVC time-value context",
-        "url": "http://www.essepuntato.it/2012/04/tvc",
-        "description": "Pattern for scenarios where entities have some value during a particular time and within a particular context."
-      },
-      {
         "prefix": "being",
         "label": "OntoMedia Being",
         "url": "http://contextus.net/ontology/ontomedia/ext/common/being#",
@@ -1321,8 +1309,8 @@
     ]
   },
   {
-    "id": "engineering",
-    "name": "Engineering, IoT & built environment",
+    "id": "web",
+    "name": "Digital Twins",
     "color": {
       "bg": "#E6F1FB",
       "border": "#378ADD",
@@ -1336,37 +1324,8 @@
         "label": "Digital Twin",
         "url": "https://w3id.org/def/dtw#",
         "description": "Digital Twin ontology defining Digital Twins, Semantic Digital Twins, and aggregations using Web of Things."
-      },
-      {
-        "prefix": "op",
-        "label": "Observable Properties",
-        "url": "http://environment.data.gov.au/def/op",
-        "description": "General-purpose ontology for observable properties supporting qualitative and quantitative descriptions."
-      },
-      {
-        "prefix": "airo",
-        "label": "AIRO AI Risk (AI Act)",
-        "url": "https://w3id.org/airo",
-        "description": "AI Risk Ontology representing AI risk concepts and relations based on the EU AI Act draft and ISO 31000."
-      },
-      {
-        "prefix": "ceon-actorODP",
-        "label": "CEON Actor ODP",
-        "url": "http://w3id.org/CEON/ontology/actorODP/",
-        "description": "Core ODP of the CEON ontology network defining aspects of the actor concept."
-      },
-      {
-        "prefix": "ceon-resourceODP",
-        "label": "CEON Resource ODP",
-        "url": "http://w3id.org/CEON/ontology/resourceODP/",
-        "description": "Core ODP of the CEON ontology network defining aspects of the resource concept."
-      },
-      {
-        "prefix": "ceon-value",
-        "label": "CEON Value ODP",
-        "url": "http://w3id.org/CEON/ontology/value/",
-        "description": "Core ODP of the CEON ontology network defining aspects of the value concept."
       }
+     
     ]
   },
   {
@@ -1440,6 +1399,12 @@
         "url": "http://data.cochrane.org/ontologies/pico/",
         "description": "Machine-accessible PICO framework for describing evidence: Population, Intervention, Comparison, Outcome."
       },
+       {
+        "prefix": "airo",
+        "label": "AIRO AI Risk (AI Act)",
+        "url": "https://w3id.org/airo",
+        "description": "AI Risk Ontology representing AI risk concepts and relations based on the EU AI Act draft and ISO 31000."
+      },
       {
         "prefix": "nyon",
         "label": "NYON Legal concepts",
@@ -1494,6 +1459,12 @@
         "label": "HiCO Historical Context",
         "url": "https://marilenadaquino.github.io/hico/",
         "description": "Ontology for representing the hermeneutical context of interpretative acts, including criteria, motivations, and source attributions."
+      },
+      {
+        "prefix": "op",
+        "label": "Observable Properties",
+        "url": "http://environment.data.gov.au/def/op",
+        "description": "General-purpose ontology for observable properties supporting qualitative and quantitative descriptions."
       },
       {
         "prefix": "sao",
