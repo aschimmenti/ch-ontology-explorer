@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "upper",
+    "name": "Upper-level & foundational",
+    "color": {
+      "bg": "#E1F5EE",
+      "border": "#0F6E56",
+      "text": "#085041",
+      "tagBg": "#9FE1CB",
+      "tagText": "#04342C"
+    },
+    "items": [
+      {
+        "prefix": "dul",
+        "label": "DOLCE+DnS Ultralite",
+        "url": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+        "description": "Simplified upper-level ontology based on DOLCE Lite-Plus, widely used as a foundational layer in knowledge engineering."
+      },
+      {
+        "prefix": "owl",
+        "label": "OWL 2",
+        "url": "http://www.w3.org/2002/07/owl",
+        "description": "W3C Web Ontology Language — describes the built-in classes and properties forming the basis of RDF/XML OWL 2 syntax."
+      },
+      {
+        "prefix": "rdf",
+        "label": "RDF Syntax",
+        "url": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "description": "Core RDF vocabulary for the RDF data model: type, Property, subject, predicate, object, etc."
+      },
+      {
+        "prefix": "rdfs",
+        "label": "RDF Schema",
+        "url": "http://www.w3.org/2000/01/rdf-schema#",
+        "description": "Data-modelling vocabulary extending RDF: classes, subclass/subproperty relations, domain, range, label, comment."
+      },
+      {
+        "prefix": "xsd",
+        "label": "XML Schema Datatypes",
+        "url": "http://www.w3.org/2001/XMLSchema#",
+        "description": "XML Schema primitive and derived datatypes used as RDF literal datatypes (string, integer, date, boolean, etc.)."
+      },
+      {
+        "prefix": "skos",
+        "label": "SKOS",
+        "url": "http://www.w3.org/2004/02/skos/core#",
+        "description": "W3C Simple Knowledge Organization System — core concepts and properties for representing thesauri, taxonomies, and controlled vocabularies."
+      },
+      {
+        "prefix": "ptop",
+        "label": "PROTON Top",
+        "url": "http://www.ontotext.com/proton/protontop",
+        "description": "Top module of the PROTON upper ontology — the most general classes for things, situations, and abstract concepts."
+      },
+      {
+        "prefix": "pext",
+        "label": "PROTON Ext",
+        "url": "http://www.ontotext.com/proton/protonext",
+        "description": "Extension of the PROTON Top module adding classes for handling Linked Open Data."
+      },
+      {
+        "prefix": "situ",
+        "label": "Situation ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+        "description": "Content ODP for representing contexts or situations and the things that are contextualized within them."
+      },
+      {
+        "prefix": "seq",
+        "label": "Sequence ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl",
+        "description": "ODP for sequence schemas: transitive and intransitive precedence between tasks, events, time intervals, or objects."
+      },
+      {
+        "prefix": "tis",
+        "label": "Time-indexed situation ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "description": "Generic ODP for situations that require temporal indexing."
+      },
+      {
+        "prefix": "ti",
+        "label": "Time interval ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "description": "ODP extracted from DOLCE-UltraLite for time intervals with datatype properties for start and end boundaries."
+      },
+      {
+        "prefix": "odpart",
+        "label": "Participation ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "description": "Basic participation pattern (without temporal indexing) cloning elements from DOLCE-UltraLite."
+      },
+      {
+        "prefix": "infor",
+        "label": "Information Realisation ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl",
+        "description": "ODP for modelling information objects and their physical realisations, enabling reasoning over both."
+      },
+      {
+        "prefix": "irw",
+        "label": "IRW Web Resource ODP",
+        "url": "http://www.ontologydesignpatterns.org/ont/web/irw.owl",
+        "description": "Ontology describing identification of web resources through URI/HTTP relationships and representations."
+      },
+      {
+        "prefix": "obws",
+        "label": "Object-with-states ODP",
+        "url": "http://delicias.dia.fi.upm.es/ontologies/ObjectWithStates.owl",
+        "description": "Content ODP for modelling objects that have discrete states over time."
+      },
+      {
+        "prefix": "icb",
+        "label": "isCharacterisedBy ODP",
+        "url": "https://w3id.org/isCharacterisedBy",
+        "description": "ODP for characterising a subject by assigning qualifiable or quantifiable attributes."
+      },
+      {
+        "prefix": "iol",
+        "label": "IOLite",
+        "url": "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl",
+        "description": "Ontology of information objects, encodings, and realisations as a plugin to DOLCE-Ultralite."
+      },
+      {
+        "prefix": "provenance",
+        "label": "Entity with Provenance ODP",
+        "url": "https://raw.githubusercontent.com/cogan-shimizu-wsu/ProvenanceOWL/master/EntityWithProvenanceOntologyPattern.owl",
+        "description": "Core ODP of PROV"
+      },
+      {
+        "prefix": "partOf",
+        "label": "Part-whole ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/partof.owl",
+        "description": "ODP for part-whole relations, including transitive and intransitive part-of properties and parthood types."
+      },
+      {
+        "prefix": "description",
+        "label": "Description ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/description.owl",
+        "description": "ODP for Description, related to DnS."
+      },
+      {
+        "prefix": "dns",
+        "label": "Descriptions and Situations",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl",
+        "description": "ODP for the Description and Situation (DnS) pattern, connecting descriptions to the situations they describe."
+      },
+      {
+        "prefix": "bda",
+        "label": "Born Digital Archive ODP",
+        "url": "http://mklab.iti.gr/pericles/BornDigitalArchives_ODP.owl",
+        "description": "ODP for Born Digital Archives."
+      },
+      {
+        "prefix": "socialrel",
+        "label": "Social Relation ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/socialrelation.owl",
+        "description": "ODP for social relationships between agents, including temporal indexing and role-based characterisation."
+      }
+    ]
+  },
+  {
+    "id": "agents",
+    "name": "Agents, persons & organisations",
+    "color": {
+      "bg": "#EEEDFE",
+      "border": "#534AB7",
+      "text": "#3C3489",
+      "tagBg": "#AFA9EC",
+      "tagText": "#26215C"
+    },
+    "items": [
+      {
+        "prefix": "foaf",
+        "label": "FOAF",
+        "url": "http://xmlns.com/foaf/0.1/",
+        "description": "Friend of a Friend — vocabulary for describing people and their connections on the Web."
+      },
+      {
+        "prefix": "org",
+        "label": "W3C Org",
+        "url": "http://www.w3.org/ns/org#",
+        "description": "W3C vocabulary for describing organizational structures across a broad variety of organization types."
+      },
+      {
+        "prefix": "person",
+        "label": "Person Core",
+        "url": "http://www.w3.org/ns/person",
+        "description": "Minimum set of classes and properties for describing a natural person."
+      },
+      {
+        "prefix": "bio",
+        "label": "Bio vocabulary",
+        "url": "http://purl.org/vocab/bio/0.1/",
+        "description": "Vocabulary for describing biographical information about people, both living and dead."
+      },
+      {
+        "prefix": "agrelon",
+        "label": "Agent Relationships",
+        "url": "http://d-nb.info/standards/elementset/agrelon",
+        "description": "Ontology of agent relationships: relations of persons to other persons and to organisations."
+      },
+      {
+        "prefix": "rel",
+        "label": "Relationship vocabulary",
+        "url": "http://purl.org/vocab/relationship/",
+        "description": "Vocabulary for describing relationships between people."
+      },
+      {
+        "prefix": "part",
+        "label": "Participation schema",
+        "url": "http://purl.org/vocab/participation/schema",
+        "description": "Simple model for describing the roles that people play within groups."
+      },
+      {
+        "prefix": "whois",
+        "label": "Whois vocabulary",
+        "url": "http://www.kanzaki.com/ns/whois",
+        "description": "Vocabulary to describe a person's profile and history."
+      },
+      {
+        "prefix": "gc",
+        "label": "Government Core",
+        "url": "http://www.oegov.org/core/owl/gc",
+        "description": "Foundation ontology for all OeGov (Open e-Government) ontologies."
+      },
+      {
+        "prefix": "rdaa",
+        "label": "RDA Agent",
+        "url": "http://rdaregistry.info/Elements/a",
+        "description": "RDA element set for attributes and relationships of Agent, Person, Family, and Corporate Body."
+      },
+      {
+        "prefix": "meetups",
+        "label": "Meetups Ontology",
+        "url": "https://polifonia-project.github.io/ecosystem/polifonia-project/meetups-ontology/README.html",
+        "description": "The ontology module MEETUPS, which is part of the Polifonia Ontology Network, represents concepts and relationships describing encounters between people in the musical world in Europe from c. 1800 to c. 1945."
+      }
+    ]
+  },
+  
+  {
+    "id": "spatio-temporal",
+    "name": "Space, time & geography",
+    "color": {
+      "bg": "#E6F1FB",
+      "border": "#185FA5",
+      "text": "#0C447C",
+      "tagBg": "#85B7EB",
+      "tagText": "#042C53"
+    },
+    "items": [
+      {
+        "prefix": "gn",
+        "label": "Geonames",
+        "url": "http://www.geonames.org/ontology",
+        "description": "Ontology for describing geographical features defined in the GeoNames database."
+      },
+      {
+        "prefix": "gsp",
+        "label": "GeoSPARQL",
+        "url": "http://www.opengis.net/ont/geosparql",
+        "description": "OGC Geographic Query Language for RDF Data — core spatial classes, properties, and query functions."
+      },
+      {
+        "prefix": "gml",
+        "label": "GML geometry",
+        "url": "http://www.opengis.net/ont/gml",
+        "description": "Specialisation of GeoSPARQL defining specific geometry subtypes from GML."
+      },
+      {
+        "prefix": "sf",
+        "label": "Simple Features",
+        "url": "http://www.opengis.net/ont/sf",
+        "description": "GeoSPARQL extension for simple feature geometries: points, lines, polygons."
+      },
+      {
+        "prefix": "geo",
+        "label": "WGS84 geo",
+        "url": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "description": "Basic geo vocabulary for representing WGS84 latitude/longitude/altitude of spatial things."
+      },
+      {
+        "prefix": "time",
+        "label": "OWL-Time",
+        "url": "http://www.w3.org/2006/time",
+        "description": "W3C OWL ontology of temporal entities: time intervals, instants, their properties and relationships."
+      },
+      {
+        "prefix": "te",
+        "label": "Time entry",
+        "url": "http://www.w3.org/2006/time-entry",
+        "description": "Sub-ontology of OWL-Time providing an entry-level set of temporal terms."
+      },
+      {
+        "prefix": "tl",
+        "label": "Timeline",
+        "url": "http://purl.org/NET/c4dm/timeline.owl",
+        "description": "Extends OWL-Time with support for multiple timelines as a backbone for multimedia time intervals."
+      },
+      {
+        "prefix": "seast",
+        "label": "SEAS Time",
+        "url": "https://w3id.org/seas/TimeOntology",
+        "description": "SEAS sub-ontology defining time-related property evaluations and subclasses of seas:Evaluation."
+      },
+      {
+        "prefix": "tempo",
+        "label": "TempO bitemporal",
+        "url": "http://purl.org/tempo",
+        "description": "Ontology for bitemporal and tritemporal data: validity, efficacy, and system time as independent axes."
+      },
+      {
+        "prefix": "hht",
+        "label": "Historical Territory",
+        "url": "https://w3id.org/HHT",
+        "description": "Ontology for hierarchical historical territorial divisions without requiring polygonal geometry."
+      },
+      {
+        "prefix": "gts",
+        "label": "Geologic Timescale",
+        "url": "http://resource.geosciml.org/ontology/timescale/gts",
+        "description": "RDF/OWL representation of the GeoSciML Geologic Timescale model (Cox & Richard 2005)."
+      },
+      {
+        "prefix": "place",
+        "label": "Places vocabulary",
+        "url": "http://purl.org/ontology/places",
+        "description": "Lightweight ontology for describing places of geographic interest."
+      },
+      {
+        "prefix": "atts",
+        "label": "ATM temporal/spatial",
+        "url": "https://data.nasa.gov/ontologies/atmonto/general#",
+        "description": "NASA ATM ontology module defining temporal and spatial concepts and general-purpose data structures."
+      },
+      {
+        "prefix": "bto",
+        "label": "Building Topology (BOT)",
+        "url": "https://w3id.org/bot",
+        "description": "Simple, extendable ontology defining core building topology concepts for the construction industry."
+      },
+      {
+        "prefix": "gleif-geo",
+        "label": "GLEIF Geocoding",
+        "url": "https://www.gleif.org/ontology/Geocoding/",
+        "description": "Concepts for geocoding of addresses, based on GLEIF Golden Copy Data geocoding."
+      }
+    ]
+  },
+  {
+    "id": "biblio",
+    "name": "Bibliographic & scholarly publishing",
+    "color": {
+      "bg": "#FAEEDA",
+      "border": "#854F0B",
+      "text": "#633806",
+      "tagBg": "#FAC775",
+      "tagText": "#412402"
+    },
+    "items": [
+      {
+        "prefix": "bibo",
+        "label": "BIBO",
+        "url": "http://purl.org/ontology/bibo/",
+        "description": "Bibliographic Ontology — main concepts and properties for describing citations and bibliographic references on the Web."
+      },
+      {
+        "prefix": "fabio",
+        "label": "FaBiO",
+        "url": "http://purl.org/spar/fabio",
+        "description": "FRBR-aligned Bibliographic Ontology for recording and publishing bibliographic records of scholarly endeavours."
+      },
+      {
+        "prefix": "doco",
+        "label": "DoCO",
+        "url": "http://purl.org/spar/doco",
+        "description": "Ontology for describing the component parts of a bibliographic document (sections, paragraphs, figures, etc.)."
+      },
+      {
+        "prefix": "biro",
+        "label": "BiRO",
+        "url": "http://purl.org/spar/biro",
+        "description": "Bibliographic Reference Ontology — FRBR-structured model for bibliographic records and reference lists."
+      },
+      {
+        "prefix": "cito",
+        "label": "CiTO",
+        "url": "http://purl.org/spar/cito",
+        "description": "Citation Typing Ontology — characterises the nature or type of citations between scholarly works."
+      },
+      {
+        "prefix": "citof",
+        "label": "CiTO Functions",
+        "url": "http://www.essepuntato.it/2013/03/cito-functions",
+        "description": "Provides a classification of CiTO citation properties according to their rhetorical function."
+      },
+      {
+        "prefix": "frbr",
+        "label": "FRBR core",
+        "url": "http://purl.org/vocab/frbr/core#",
+        "description": "RDF expression of IFLA FRBR entity-relationship model: Work, Expression, Manifestation, Item."
+      },
+      {
+        "prefix": "frbre",
+        "label": "FRBR extended",
+        "url": "http://purl.org/vocab/frbr/extended",
+        "description": "Extended FRBR concepts in RDF beyond the core Work–Item hierarchy."
+      },
+      {
+        "prefix": "frbrer",
+        "label": "FRBR ER",
+        "url": "http://iflastandards.info/ns/fr/frbr/frbrer/",
+        "description": "Native RDF element set for FRBR classes and properties as defined in the IFLA 2009 text."
+      },
+      {
+        "prefix": "bibframe",
+        "label": "BIBFRAME",
+        "url": "http://id.loc.gov/ontologies/bibframe/",
+        "description": "Library of Congress bibliographic framework replacing MARC — models Work, Instance, Item and related entities."
+      },
+      {
+        "prefix": "mads",
+        "label": "MADS/RDF",
+        "url": "http://www.loc.gov/mads/rdf/v1",
+        "description": "Metadata Authority Description Schema in RDF for controlled names, thesauri, taxonomies, and subject headings."
+      },
+      {
+        "prefix": "isbd",
+        "label": "ISBD",
+        "url": "http://iflastandards.info/ns/isbd/elements/",
+        "description": "RDF registration of International Standard Bibliographic Description (ISBD) consolidated edition (2011)."
+      },
+      {
+        "prefix": "rdac",
+        "label": "RDA Classes",
+        "url": "http://rdaregistry.info/Elements/c",
+        "description": "RDA classes element set representing RDA entities: Work, Expression, Manifestation, Item, Person, Family, Corporate Body."
+      },
+      {
+        "prefix": "rdae",
+        "label": "RDA Expression",
+        "url": "http://rdaregistry.info/Elements/e",
+        "description": "RDA element set for attributes and relationships of the Expression entity."
+      },
+      {
+        "prefix": "rdafrbr",
+        "label": "RDA/FRBR entities",
+        "url": "http://rdvocab.info/uri/schema/FRBRentitiesRDA",
+        "description": "Core RDA classes including FRBR levels Work, Expression, Manifestation and Item."
+      },
+      {
+        "prefix": "rdag1",
+        "label": "RDA Group 1",
+        "url": "http://rdvocab.info/Elements",
+        "description": "Provisional RDA Group 1 Element Vocabulary managed by the DCMI/RDA Task Group."
+      },
+      {
+        "prefix": "rdag2",
+        "label": "RDA Group 2",
+        "url": "http://rdvocab.info/ElementsGr2",
+        "description": "Second group of RDA metadata elements covering agents."
+      },
+      {
+        "prefix": "rdag3",
+        "label": "RDA Group 3",
+        "url": "http://rdvocab.info/ElementsGr3",
+        "description": "RDA elements for preferred and variant names for concepts, places, and events."
+      },
+      {
+        "prefix": "rdai",
+        "label": "RDA Item",
+        "url": "http://rdaregistry.info/Elements/i",
+        "description": "RDA element set for attributes and relationships of the Item entity."
+      },
+      {
+        "prefix": "rdam",
+        "label": "RDA Manifestation",
+        "url": "http://rdaregistry.info/Elements/m",
+        "description": "RDA element set for attributes and relationships of the Manifestation entity."
+      },
+      {
+        "prefix": "rdarel",
+        "label": "RDA WEMI Relationships",
+        "url": "http://rdvocab.info/RDARelationshipsWEMI",
+        "description": "Vocabulary of specific relationships between FRBR WEMI levels."
+      },
+      {
+        "prefix": "rdarel2",
+        "label": "RDA GR2 Relationships",
+        "url": "http://metadataregistry.org/uri/schema/RDARelationshipsGR2",
+        "description": "RDA relationship vocabulary for Persons, Corporate Bodies, and Families."
+      },
+      {
+        "prefix": "rdarole",
+        "label": "RDA Roles",
+        "url": "http://rdvocab.info/roles",
+        "description": "Vocabulary of roles linking agents to FRBR objects (works, expressions, manifestations, items)."
+      },
+      {
+        "prefix": "rdau",
+        "label": "RDA Unconstrained",
+        "url": "http://rdaregistry.info/Elements/u",
+        "description": "RDA element set with semantics independent of the FRBR model and no specified domain or range."
+      },
+      {
+        "prefix": "rdaw",
+        "label": "RDA Work",
+        "url": "http://rdaregistry.info/Elements/w",
+        "description": "RDA element set for attributes and relationships of the Work entity."
+      },
+      {
+        "prefix": "scoro",
+        "label": "SCoRO",
+        "url": "http://purl.org/spar/scoro/",
+        "description": "Scholarly Contributions and Roles Ontology — describes contributions and roles held by persons with respect to publications."
+      },
+      {
+        "prefix": "pro",
+        "label": "PRO Publishing Roles",
+        "url": "http://purl.org/spar/pro",
+        "description": "Publishing Roles Ontology — describes publication-process roles of agents over defined time periods."
+      },
+      {
+        "prefix": "pso",
+        "label": "PSO Publication Status",
+        "url": "http://purl.org/spar/pso",
+        "description": "Ontology for describing the status held by a bibliographic document at each stage in the publishing process."
+      },
+      {
+        "prefix": "pwo",
+        "label": "PWO Publication Workflow",
+        "url": "http://purl.org/spar/pwo",
+        "description": "Ontology for describing the workflow associated with the publication of a document."
+      },
+      {
+        "prefix": "r4r",
+        "label": "R4R Resource Reuse",
+        "url": "http://guava.iis.sinica.edu.tw/r4r",
+        "description": "Lightweight ontology representing reuse contexts between articles, data, code, provenance, and licenses."
+      },
+      {
+        "prefix": "irao",
+        "label": "Research Artifacts",
+        "url": "http://ontology.ethereal.cz/irao",
+        "description": "Informatics Research Artifacts Ontology for describing research outputs using OWL and RDF Schema."
+      }
+    ]
+  },
+  {
+    "id": "cidoc",
+    "name": "CIDOC CRM & extensions",
+    "color": {
+      "bg": "#FCE9E6",
+      "border": "#993C1D",
+      "text": "#712B13",
+      "tagBg": "#F0997B",
+      "tagText": "#4A1B0C"
+    },
+    "items": [
+      {
+        "prefix": "crm",
+        "label": "CIDOC-CRM",
+        "url": "http://www.cidoc-crm.org/cidoc-crm/",
+        "description": "ISO 21127 reference ontology for the exchange and integration of cultural heritage information."
+      },
+      {
+        "prefix": "ecrm",
+        "label": "Erlangen CRM",
+        "url": "http://erlangen-crm.org/current/",
+        "description": "OWL DL implementation of CIDOC-CRM developed at Friedrich-Alexander-University Erlangen-Nuremberg."
+      },
+      {
+        "prefix": "crminf",
+        "label": "CRMinf Argumentation",
+        "url": "http://www.cidoc-crm.org/extensions/crminf/",
+        "description": "CIDOC CRM extension for modelling argumentation, inference making, belief adoption, propositions, and interpretative reasoning."
+      },
+      {
+        "prefix": "crmsci",
+        "label": "CRMsci Scientific Observation",
+        "url": "http://www.cidoc-crm.org/extensions/crmsci/",
+        "description": "CIDOC CRM extension for scientific observations, measurements, empirical assessment, hypothesis formation, and interpretation of evidence."
+      },
+      {
+        "prefix": "crmgeo",
+        "label": "CRMgeo Spatiotemporal",
+        "url": "http://www.cidoc-crm.org/extensions/crmgeo/",
+        "description": "CIDOC CRM extension integrating geospatial and temporal reasoning with GeoSPARQL and GIS-compatible representations."
+      },
+      {
+        "prefix": "crmarchaeo",
+        "label": "CRMarchaeo Archaeology",
+        "url": "http://www.cidoc-crm.org/extensions/crmarchaeo/",
+        "description": "CIDOC CRM extension for archaeological excavations, stratigraphy, finds processing, and archaeological documentation workflows."
+      },
+      {
+        "prefix": "crmdig",
+        "label": "CRMdig Digital Provenance",
+        "url": "http://www.cidoc-crm.org/extensions/crmdig/",
+        "description": "CIDOC CRM extension for digitisation processes, digital provenance, computational derivation, and production metadata."
+      },
+      {
+        "prefix": "crmtex",
+        "label": "CRMtex Textual Entities",
+        "url": "http://www.cidoc-crm.org/extensions/crmtex/",
+        "description": "CIDOC CRM extension for manuscripts, inscriptions, textual carriers, writing systems, and textual interpretation."
+      },
+      {
+        "prefix": "crmba",
+        "label": "CRMba Built Archaeology",
+        "url": "http://www.cidoc-crm.org/extensions/crmba/",
+        "description": "CIDOC CRM extension supporting archaeological analysis and documentation of standing buildings and architectural stratification."
+      },
+      {
+        "prefix": "crmpe",
+        "label": "CRMpe Phenomenology",
+        "url": "http://www.cidoc-crm.org/extensions/crmpe/",
+        "description": "CIDOC CRM extension for modelling phenomenological relations in built heritage and spatial perception of monuments."
+      },
+      {
+        "prefix": "crmsoc",
+        "label": "CRMsoc Social Phenomena",
+        "url": "http://www.cidoc-crm.org/extensions/crmsoc/",
+        "description": "CIDOC CRM extension for modelling social relations, group dynamics, memberships, and social historical phenomena."
+      },
+      {
+        "prefix": "lrmoo",
+        "label": "LRMoo",
+        "url": "http://iflastandards.info/ns/lrm/lrmoo/",
+        "description": "Object-oriented implementation of the IFLA Library Reference Model harmonised with CIDOC CRM for bibliographic and cultural heritage resources."
+      },
+      {
+        "prefix": "frbroo",
+        "label": "FRBRoo",
+        "url": "http://iflastandards.info/ns/fr/frbr/frbroo/",
+        "description": "CIDOC CRM harmonisation of the FRBR bibliographic model for works, expressions, manifestations, and items."
+      },
+      {
+        "prefix": "pressoo",
+        "label": "PRESSoo",
+        "url": "http://www.issn.org/ontology/pressoo/",
+        "description": "CIDOC CRM-compatible ontology for serials, continuing resources, and bibliographic publishing workflows."
+      },
+      {
+        "prefix": "sdhss",
+        "label": "SDHSS",
+        "url": "https://ontome.net/project/12",
+        "description": "Semantic Data for Humanities and Social Sciences ecosystem extending CIDOC CRM for interoperable humanities research data."
+      },
+      {
+        "prefix": "ecrm",
+        "label": "Erlangen CRM",
+        "url": "http://erlangen-crm.org/current/",
+        "description": "OWL DL 1.0 implementation of CIDOC-CRM developed at Friedrich-Alexander-University Erlangen-Nuremberg."
+      }
+    ]
+  },
+  {
+    "id": "ch",
+    "name": "Cultural heritage (specific)",
+    "color": {
+      "bg": "#FAECE7",
+      "border": "#993C1D",
+      "text": "#712B13",
+      "tagBg": "#F0997B",
+      "tagText": "#4A1B0C"
+    },
+    "items": [
+      {
+        "prefix": "edm",
+        "label": "Europeana Data Model",
+        "url": "http://www.europeana.eu/schemas/edm/",
+        "description": "Integration medium for collecting, connecting and enriching descriptions provided by Europeana data providers."
+      },
+      {
+        "prefix": "arco",
+        "label": "ArCo (root)",
+        "url": "https://w3id.org/arco/ontology/arco",
+        "description": "Root module of the ArCo ontology network for Italian cultural heritage — imports all other modules."
+      },
+      {
+        "prefix": "r-arco",
+        "label": "ArCo network",
+        "url": "https://w3id.org/arco/ontology/arco",
+        "description": "ArCo (Architecture of Knowledge) — Italian cultural heritage ontology network modelling the General Catalogue (ICCD)."
+      },
+      {
+        "prefix": "a-loc",
+        "label": "ArCo Location",
+        "url": "https://w3id.org/arco/ontology/location",
+        "description": "ArCo module for localization and georeferencing of cultural properties, using place and time-indexed situation ODPs."
+      },
+      {
+        "prefix": "cdesc",
+        "label": "ArCo Context Description",
+        "url": "https://w3id.org/arco/ontology/context-description",
+        "description": "ArCo module for contextual attributes of cultural properties: agents, objects, activities, and situations."
+      },
+      {
+        "prefix": "cevent",
+        "label": "ArCo Cultural Event",
+        "url": "https://w3id.org/arco/ontology/cultural-event",
+        "description": "ArCo module modelling cultural events involving cultural properties."
+      },
+      {
+        "prefix": "ctlog",
+        "label": "ArCo Catalogue",
+        "url": "https://w3id.org/arco/ontology/catalogue",
+        "description": "ArCo module describing concepts related to the Italian General Catalogue of Cultural Heritage (ICCD-MiBAC) records."
+      },
+      {
+        "prefix": "ddesc",
+        "label": "ArCo Denotative Description",
+        "url": "https://w3id.org/arco/ontology/denotative-description",
+        "description": "ArCo module encoding measurable characteristics of cultural properties: materials, techniques, measurements, conservation status."
+      },
+      {
+        "prefix": "cis",
+        "label": "Cultural Institutes/Sites",
+        "url": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+        "description": "Ontology for data on cultural institutes or sites: agents, locations, contact points, multimedia, and events."
+      },
+      {
+        "prefix": "vir",
+        "label": "VIR Visual Iconography",
+        "url": "http://w3id.org/vir#",
+        "description": "OWL extension of CIDOC-CRM for visual elements and iconographic interpretation, supporting denotation and signification."
+      },
+      {
+        "prefix": "icon",
+        "label": "ICON Iconology",
+        "url": "https://w3id.org/icon/ontology/",
+        "description": "Ontology conceptualising Panofsky's levels of art interpretation: pre-iconographical, iconographical, iconological."
+      },
+      {
+        "prefix": "sealit",
+        "label": "SeaLiT Maritime History",
+        "url": "http://www.sealitproject.eu/ontology/",
+        "description": "Formal ontology extending CIDOC-CRM v7.1.1 for integration of heterogeneous maritime history information sources."
+      },
+            {
+        "prefix": "cwrc",
+        "label": "CWRC Writing Research",
+        "url": "http://sparql.cwrc.ca/ontologies/cwrc",
+        "description": "Ontology of the Canadian Writing Research Collaboratory."
+      },
+      {
+        "prefix": "shoah",
+        "label": "Shoah persecution domain",
+        "url": "http://dati.cdec.it/lod/shoah/",
+        "description": "Beta ontology describing the persecution and deportation of Jews in Italy between 1943 and 1945."
+      },
+      {
+        "prefix": "premis",
+        "label": "PREMIS Preservation",
+        "url": "http://www.loc.gov/premis/rdf/v1",
+        "description": "Library of Congress ontology for preservation metadata describing intellectual entities, objects, events, agents, and rights."
+      },
+      {
+        "prefix": "lode",
+        "label": "LODE Historical Events",
+        "url": "http://linkedevents.org/ontology/",
+        "description": "Ontology for publishing descriptions of historical events as Linked Data, with mappings to other event vocabularies."
+      },
+      {
+        "prefix": "saws",
+        "label": "SAWS Ancient Wisdoms",
+        "url": "http://purl.org/saws/ontology",
+        "description": "Ontology for the Sharing Ancient Wisdoms project, representing medieval Greek and Arabic wisdom literature."
+      },
+      {
+        "prefix": "intro",
+        "label": "INTRO Intertextuality",
+        "url": "https://w3id.org/lso/intro/beta202408",
+        "description": "Ontology for intertextual, interpictorial, and intermedial relations in literary and art studies."
+      }
+    ]
+  },
+  {
+    "id": "prov",
+    "name": "Provenance, versioning & rights",
+    "color": {
+      "bg": "#FBEAF0",
+      "border": "#993556",
+      "text": "#72243E",
+      "tagBg": "#ED93B1",
+      "tagText": "#4B1528"
+    },
+    "items": [
+      {
+        "prefix": "prov",
+        "label": "PROV-O",
+        "url": "http://www.w3.org/ns/prov#",
+        "description": "W3C PROV Ontology — family of documents supporting provenance interchange on the Web."
+      },
+      {
+        "prefix": "pav",
+        "label": "PAV",
+        "url": "http://purl.org/pav/",
+        "description": "Lightweight ontology for tracking Provenance, Authoring, and Versioning of online resources, specialising PROV-O."
+      },
+      {
+        "prefix": "p-plan",
+        "label": "P-Plan",
+        "url": "http://purl.org/net/p-plan#",
+        "description": "PROV-O extension for representing scientific plans (bundles of steps and variables) alongside execution records."
+      },
+      {
+        "prefix": "cc",
+        "label": "Creative Commons REL",
+        "url": "http://creativecommons.org/ns",
+        "description": "CC Rights Expression Language for describing copyright licenses in RDF."
+      },
+      {
+        "prefix": "oecc",
+        "label": "OeGov CC Ontology",
+        "url": "http://www.oegov.org/core/owl/cc",
+        "description": "Creative Commons ontology extending the CC RDF schema for the OeGov context."
+      },
+      {
+        "prefix": "odrl",
+        "label": "ODRL Rights Language",
+        "url": "http://www.w3.org/ns/odrl/2/",
+        "description": "Open Digital Rights Language — flexible, interoperable mechanisms for digital content rights in publishing and distribution."
+      },
+      {
+        "prefix": "odrs",
+        "label": "Open Data Rights",
+        "url": "http://schema.theodi.org/odrs",
+        "description": "ODI vocabulary supporting machine-readable rights statements for open data publication."
+      },
+      {
+        "prefix": "cro",
+        "label": "Copyright Ontology",
+        "url": "http://rhizomik.net/ontologies/copyrightonto.owl",
+        "description": "Ontology for copyright-aware Digital Rights Management (DRM) systems."
+      },
+      {
+        "prefix": "limoo",
+        "label": "LiMo Licenses",
+        "url": "http://purl.org/LiMo/0.1#",
+        "description": "Vocabulary for describing software and content licenses as linked data."
+      },
+      {
+        "prefix": "tro",
+        "label": "TRO Transparency Relations",
+        "url": "https://w3id.org/TRO",
+        "description": "Vocabulary representing transparency relations typically between powerful people or institutions."
+      },
+      {
+        "prefix": "gdprov",
+        "label": "GDPRov",
+        "url": "https://w3id.org/GDPRov",
+        "description": "OWL2 ontology for provenance metadata of consent and data lifecycles towards documenting GDPR compliance."
+      },
+      {
+        "prefix": "pd",
+        "label": "DPV Personal Data",
+        "url": "https://w3id.org/dpv/pd",
+        "description": "Extension to the Data Privacy Vocabulary providing additional categories of personal data."
+      },
+      {
+        "prefix": "munc",
+        "label": "MUNC Uncertainty",
+        "url": "http://ns.inria.fr/munc/",
+        "description": "OWL vocabulary for describing uncertainty metadata about RDF statements."
+      },
+      {
+        "prefix": "orca",
+        "label": "ORCA Certainty/Attribution",
+        "url": "http://vocab.deri.ie/orca",
+        "description": "Ontology of Reasoning, Certainty and Attribution for characterising how information is known and its source."
+      }
+    ]
+  },
+  {
+    "id": "metadata",
+    "name": "Metadata, vocabularies & data catalogues",
+    "color": {
+      "bg": "#EAF3DE",
+      "border": "#3B6D11",
+      "text": "#27500A",
+      "tagBg": "#97C459",
+      "tagText": "#173404"
+    },
+    "items": [
+      {
+        "prefix": "dce",
+        "label": "Dublin Core Elements",
+        "url": "http://purl.org/dc/elements/1.1/",
+        "description": "Fifteen foundational Dublin Core metadata properties for resource description (title, creator, date, format, etc.)."
+      },
+      {
+        "prefix": "dcterms",
+        "label": "DC Terms",
+        "url": "http://purl.org/dc/terms/",
+        "description": "Full DCMI metadata terms: all properties, vocabulary/syntax encoding schemes, and classes maintained by DCMI."
+      },
+      {
+        "prefix": "dctype",
+        "label": "DC Type",
+        "url": "http://purl.org/dc/dcmitype/",
+        "description": "DCMI Type Vocabulary — approved terms for the Resource Type element identifying the genre of a resource."
+      },
+      {
+        "prefix": "dcam",
+        "label": "DC Abstract Model",
+        "url": "http://purl.org/dc/dcam/",
+        "description": "Abstract model for Dublin Core metadata underlying the DCMI specifications."
+      },
+      {
+        "prefix": "skos",
+        "label": "SKOS",
+        "url": "http://www.w3.org/2004/02/skos/core#",
+        "description": "Simple Knowledge Organization System — common data model for sharing and linking KOS via the Semantic Web."
+      },
+      {
+        "prefix": "skosxl",
+        "label": "SKOS-XL",
+        "url": "http://www.w3.org/2008/05/skos-xl",
+        "description": "SKOS extension providing additional support for describing and linking lexical entities in concept schemes."
+      },
+      {
+        "prefix": "iso-thes",
+        "label": "ISO 25964 SKOS-Thes",
+        "url": "http://purl.org/iso25964/skos-thes",
+        "description": "Vocabulary for interoperability between SKOS and ISO 25964-1:2011 (thesaurus standard)."
+      },
+      {
+        "prefix": "uneskos",
+        "label": "UNESCO SKOS ext.",
+        "url": "http://purl.org/umu/uneskos",
+        "description": "RDF vocabulary extending SKOS and ISO-THES to improve linked data consumption of SKOS datasets."
+      },
+      {
+        "prefix": "dcat",
+        "label": "DCAT",
+        "url": "http://www.w3.org/ns/dcat",
+        "description": "W3C Data Catalog Vocabulary — RDF vocabulary for facilitating interoperability between web data catalogs."
+      },
+      {
+        "prefix": "modp",
+        "label": "MOD Ontology metadata",
+        "url": "https://w3id.org/mod",
+        "description": "Metadata for Ontology Description and publication — describing ontologies themselves."
+      },
+      {
+        "prefix": "mdr",
+        "label": "MDR DCAT profile",
+        "url": "http://semanticturkey.uniroma2.it/ns/mdr",
+        "description": "Application profile of DCAT combining VoID, DCTERMS, and LIME for the Semantic Turkey platform."
+      },
+      {
+        "prefix": "schema",
+        "label": "Schema.org",
+        "url": "https://schema.org/",
+        "description": "Shared vocabulary used by Bing, Google, Yahoo!, and Yandex to improve search result display."
+      },
+      {
+        "prefix": "dbpedia-owl",
+        "label": "DBpedia Ontology",
+        "url": "http://dbpedia.org/ontology/",
+        "description": "Classes and properties used in the DBpedia dataset, extracted from Wikipedia infoboxes."
+      },
+      {
+        "prefix": "dcite",
+        "label": "DataCite Ontology",
+        "url": "http://purl.org/spar/datacite",
+        "description": "OWL 2 DL ontology enabling DataCite Metadata Specification v2.0 properties to be described in RDF."
+      },
+      {
+        "prefix": "ore",
+        "label": "OAI-ORE aggregations",
+        "url": "http://www.openarchives.org/ore/terms/",
+        "description": "Open Archives Initiative ORE — standards for description and exchange of aggregations of web resources."
+      },
+      {
+        "prefix": "daq",
+        "label": "DAQ Data Quality",
+        "url": "http://purl.org/eis/vocab/daq#",
+        "description": "Vocabulary for allowing owners/users of RDF data to calculate quality metrics on multiple resource types."
+      },
+      {
+        "prefix": "mrel",
+        "label": "MARC Relators",
+        "url": "http://id.loc.gov/vocabulary/relators",
+        "description": "MARC relator terms defined as both RDF properties and SKOS concepts for bibliographic relationships."
+      }
+    ]
+  },
+  {
+    "id": "nlp",
+    "name": "NLP, linguistics & lexicography",
+    "color": {
+      "bg": "#F1EFE8",
+      "border": "#5F5E5A",
+      "text": "#444441",
+      "tagBg": "#B4B2A9",
+      "tagText": "#2C2C2A"
+    },
+    "items": [
+      {
+        "prefix": "ontolex",
+        "label": "OntoLex-Lemon core",
+        "url": "http://www.w3.org/ns/lemon/ontolex",
+        "description": "W3C model for representing lexical information relative to ontologies. Core module."
+      },
+      {
+        "prefix": "lemon",
+        "label": "Lemon (legacy)",
+        "url": "http://lemon-model.net/lemon",
+        "description": "Original Lemon lexicon model for ontologies — predecessor to OntoLex, covering morphology, syntax, and lexicon-ontology mapping."
+      },
+      {
+        "prefix": "gold",
+        "label": "GOLD",
+        "url": "http://purl.org/linguistics/gold",
+        "description": "General Ontology for Linguistic Description — created for applications in descriptive linguistics."
+      },
+      {
+        "prefix": "lmm2",
+        "label": "LMM L2",
+        "url": "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl",
+        "description": "Ontology for aligning existing linguistic ontologies and describing NLP research objects."
+      },
+      {
+        "prefix": "semiotics",
+        "label": "Semiotics ODP",
+        "url": "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl",
+        "description": "ODP encoding a basic semiotic theory: Expression, Meaning, Reference, and LinguisticAct."
+      },
+      {
+        "prefix": "semio",
+        "label": "Semio vocabulary",
+        "url": "http://www.lingvoj.org/semio.rdf",
+        "description": "Vocabulary to describe signs in a semiotic approach."
+      },
+      {
+        "prefix": "pmofn",
+        "label": "PreMOn FrameNet",
+        "url": "http://premon.fbk.eu/ontology/fn",
+        "description": "PreMOn FrameNet module extending the core module for FrameNet-specific concepts."
+      },
+      {
+        "prefix": "pmonb",
+        "label": "PreMOn NomBank",
+        "url": "http://premon.fbk.eu/ontology/nb",
+        "description": "PreMOn NomBank module extending the core module for NomBank predicate concepts."
+      },
+      {
+        "prefix": "pmopb",
+        "label": "PreMOn PropBank",
+        "url": "http://premon.fbk.eu/ontology/pb",
+        "description": "PreMOn PropBank module extending the core module for PropBank-specific concepts."
+      },
+      {
+        "prefix": "pmovn",
+        "label": "PreMOn VerbNet",
+        "url": "http://premon.fbk.eu/ontology/vn",
+        "description": "PreMOn VerbNet module with classes and properties specific to the VerbNet predicate model."
+      },
+      {
+        "prefix": "gndo",
+        "label": "GND Authority File",
+        "url": "http://d-nb.info/standards/elementset/gnd#",
+        "description": "Gemeinsame Normdatei (German Integrated Authority File) — broad element set for describing authorities."
+      },
+      {
+        "prefix": "frad",
+        "label": "FRAD Authority Data",
+        "url": "http://iflastandards.info/ns/fr/frad/",
+        "description": "IFLA Functional Requirements for Authority Data — element set of native RDF classes and properties."
+      },
+      {
+        "prefix": "muto",
+        "label": "MUTO Tagging",
+        "url": "http://purl.org/muto/core",
+        "description": "Modular and Unified Tagging Ontology — unified schema for common, semantic, group, private, and automatic tagging."
+      },
+      {
+        "prefix": "ontopic",
+        "label": "OnTopic thesaurus",
+        "url": "http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl",
+        "description": "Ontology of topics as used in thesauri and subject directories."
+      },
+      {
+        "prefix": "oa",
+        "label": "Web Annotation (OA)",
+        "url": "http://www.w3.org/ns/oa#",
+        "description": "W3C Open Annotation Core — interoperable framework for creating associations between resources."
+      },
+      {
+        "prefix": "fel",
+        "label": "FEL Entity Linking",
+        "url": "http://w3id.org/vcb/fel#",
+        "description": "RDF vocabulary for describing and categorising annotations involving entity mentions linked to knowledge base identifiers."
+      },
+      {
+        "prefix": "biol",
+        "label": "Biol taxonomy",
+        "url": "http://purl.org/NET/biol/ns#",
+        "description": "RDF vocabulary for the taxonomy of all forms of life."
+      }
+    ]
+  },
+  {
+    "id": "events",
+    "name": "Events, processes & workflows",
+    "color": {
+      "bg": "#FFF8EE",
+      "border": "#BA7517",
+      "text": "#854F0B",
+      "tagBg": "#FAC775",
+      "tagText": "#412402"
+    },
+    "items": [
+      {
+        "prefix": "event",
+        "label": "Event (C4DM)",
+        "url": "http://purl.org/NET/c4dm/event.owl",
+        "description": "C4DM ontology dealing with the notion of reified events seen as first-class objects."
+      },
+      {
+        "prefix": "lcy",
+        "label": "Lifecycle Schema",
+        "url": "http://purl.org/vocab/lifecycle/schema",
+        "description": "Classes and properties specifying a lifecycle that any resource may pass through."
+      },
+      {
+        "prefix": "pko",
+        "label": "PKO Procedural Knowledge",
+        "url": "https://w3id.org/pko",
+        "description": "Procedural Knowledge Ontology — models procedures, their executions, and related resources and agents."
+      },
+      {
+        "prefix": "ceon-processODP",
+        "label": "CEON Process ODP",
+        "url": "http://w3id.org/CEON/ontology/processODP/",
+        "description": "Core ODP of the CEON ontology network defining aspects of the process concept."
+      },
+      {
+        "prefix": "spt",
+        "label": "SPITFIRE event/sensor",
+        "url": "http://spitfire-project.eu/ontology/ns",
+        "description": "SPITFIRE Ontology aligning DOLCE+DnS Ultralite, W3C SSN, and Event Model-F for sensor/IoT events."
+      },
+      {
+        "prefix": "tvc",
+        "label": "TVC time-value context",
+        "url": "http://www.essepuntato.it/2012/04/tvc",
+        "description": "Pattern for scenarios where entities have some value during a particular time and within a particular context."
+      },
+      {
+        "prefix": "being",
+        "label": "OntoMedia Being",
+        "url": "http://contextus.net/ontology/ontomedia/ext/common/being#",
+        "description": "Vocabulary to describe interactions between persons and groups occurring in multimedia."
+      },
+      {
+        "prefix": "oc",
+        "label": "OntoMedia Expression",
+        "url": "http://contextus.net/ontology/ontomedia/core/expression#",
+        "description": "OntoMedia core expression ontology for describing interactions in multimedia contexts."
+      }
+    ]
+  },
+{
+    "id": "music",
+    "name": "Music",
+    "color": {
+        "bg": "#FBEAF0",
+        "border": "#D4537E",
+        "text": "#72243E",
+        "tagBg": "#F4C0D1",
+        "tagText": "#4B1528"
+    },
+    "items": [
+        {
+            "prefix": "mo",
+            "label": "Music Ontology",
+            "url": "http://purl.org/ontology/mo/",
+            "description": "Main concepts and properties for describing music: artists, albums, tracks, performances on the Semantic Web."
+        },
+        {
+            "prefix": "mus",
+            "label": "DOREMUS Music",
+            "url": "http://data.doremus.org/ontology#",
+            "description": "DOREMUS extension of FRBRoo for describing musical works and their performances."
+        },
+        {
+            "prefix": "chord",
+            "label": "Chord Ontology",
+            "url": "http://purl.org/ontology/chord/",
+            "description": "First-draft chord ontology from QMUL Centre for Digital Music, providing vocabulary for chords and chord sequences."
+        },
+        {
+            "prefix": "pon",
+            "label": "Polifonia Ontology Network (PON)",
+            "url": "https://w3id.org/polifonia/ontology/ontology-network/",
+            "description": "The FULL module of the Polifonia Ontology Network (PON), a modular ontology network for representing tangible and intangible musical cultural heritage assets. This module imports all other PON modules to provide a comprehensive backbone. Aligned with DOREMUS, Music Ontology, MusicOWL, and Wikidata.[reference:0][reference:1]"
+        },
+        {
+            "prefix": "core",
+            "label": "PON Core",
+            "url": "https://w3id.org/polifonia/ontology/core/",
+            "description": "Core ontology module of the Polifonia Ontology Network. Models general-purpose concepts and ontology design patterns (place, time, classification, situation) that are reused across all other PON modules. Includes the Music Time Interval ODP for musical timing information.[reference:2]"
+        },
+        {
+            "prefix": "mm",
+            "label": "PON Music Meta",
+            "url": "https://w3id.org/polifonia/ontology/music-meta/",
+            "description": "Foundational module of PON for achieving interoperability of music metadata. Provides a rich ontology to describe artists, compositions, performances, recordings, and casts. Focuses on provenance and is based on the Information-Realisation ODP. Aligned with Music Ontology, DOREMUS, and Wikidata.[reference:3]"
+        },
+        {
+            "prefix": "mr",
+            "label": "PON Music Representation",
+            "url": "https://w3id.org/polifonia/ontology/music-representation/",
+            "description": "Foundational module of PON to describe arbitrary musical content (scores, audio tracks). Provides a schema for describing music analysis based on theoretical interpretations. Represents annotations of musical object fragments (notes, chords) with temporal locations.[reference:4]"
+        },
+        {
+            "prefix": "mop",
+            "label": "PON Music Instrument",
+            "url": "https://w3id.org/polifonia/ontology/music-instrument/",
+            "description": "Foundational module of PON for representing musical instruments and their evolution through time and space. Models instruments as cultural objects with historical and geographical dimensions.[reference:5]"
+        },
+        {
+            "prefix": "src",
+            "label": "PON Source",
+            "url": "https://w3id.org/polifonia/ontology/source/",
+            "description": "Foundational module of PON for representing music-related sources (manuscripts, articles, interviews, reviews). Provides support for describing source creators, types, production context, usage, and multimedia documents (score images, audio, video).[reference:6]"
+        },
+        {
+            "prefix": "ann",
+            "label": "PON Music Annotation",
+            "url": "https://w3id.org/polifonia/ontology/music-annotation/",
+            "description": "Module providing a comprehensive framework for music annotations of different types and syntaxes. Includes the JAMS Ontology (JSON Annotated Music Specification) for reproducible MIR research. Enhances interoperability between music annotation formats.[reference:7]"
+        },
+        {
+            "prefix": "tunes",
+            "label": "PON Tunes",
+            "url": "https://w3id.org/polifonia/ontology/tunes/",
+            "description": "Specialisation of the Music Meta module for folk music representation. Extends Music Meta to address specific requirements of folk music traditions and repertoires.[reference:8]"
+        },
+        {
+            "prefix": "com",
+            "label": "PON CoMeta",
+            "url": "https://w3id.org/polifonia/ontology/cometa/",
+            "description": "Extension of the Music Meta module to represent music corpora. Supports the description and management of large-scale music collections and datasets.[reference:9]"
+        },
+        {
+            "prefix": "mp",
+            "label": "PON Music Projection",
+            "url": "https://w3id.org/polifonia/ontology/music-projection/",
+            "description": "Module for achieving interoperability of music notation systems. Provides a model for representing different musical notations and their relationships.[reference:10]"
+        },
+        {
+            "prefix": "ma",
+            "label": "PON Music Analysis",
+            "url": "https://w3id.org/polifonia/ontology/music-analysis/",
+            "description": "Module for music analysis through reasoning using modal-tonal theories. Supports computational analysis and reasoning about musical structures and relationships.[reference:11]"
+        },
+        {
+            "prefix": "mx",
+            "label": "PON Music Algorithm",
+            "url": "https://w3id.org/polifonia/ontology/music-algorithm/",
+            "description": "Module for describing computational methods for music and their parameterization. Enables representation and reproducibility of music processing algorithms.[reference:12]"
+        },
+        {
+            "prefix": "organ",
+            "label": "PON Organs",
+            "url": "https://w3id.org/polifonia/ontology/organs/",
+            "description": "Rich descriptive model of musical organs and building methods. Represents organ specifications, construction techniques, and historical organ data.[reference:13]"
+        },
+        {
+            "prefix": "bell",
+            "label": "PON Bells",
+            "url": "https://w3id.org/polifonia/ontology/bells/",
+            "description": "Ontology for describing bells, bell towers, and bell ringers. Represents measurable aspects of bells (weight), authorship attribution, and relationships to bell towers and ringers.[reference:14][reference:15]"
+        },
+        {
+            "prefix": "meetups",
+            "label": "PON MEETUPS",
+            "url": "https://w3id.org/polifonia/ontology/meetups-ontology/",
+            "description": "Ontology representing concepts and relationships describing encounters between people in the musical world in Europe from c. 1800 to c. 1945. Models participants, places, event types, reasons (music making, personal life, business), and dates of historical musical meetups.[reference:16][reference:17]"
+        },
+        {
+            "prefix": "rmc",
+            "label": "PON Roman Chord",
+            "url": "https://w3id.org/polifonia/resource/roman-chord/",
+            "description": "Ontology for representing Roman chord notations in music analysis. Provides vocabulary for chord descriptions and relationships to musical objects.[reference:18]"
+        }
+    ]
+},
+  {
+    "id": "cognitive",
+    "name": "Cognitive science, psychology & affect",
+    "color": {
+      "bg": "#EAF3DE",
+      "border": "#3B6D11",
+      "text": "#27500A",
+      "tagBg": "#97C459",
+      "tagText": "#173404"
+    },
+    "items": [
+      {
+        "prefix": "emotion",
+        "label": "EmOCA Emotion",
+        "url": "http://ns.inria.fr/emoca",
+        "description": "EmOCA — contextualises dimensional emotion and categorises it for human readability."
+      },
+      {
+        "prefix": "cco",
+        "label": "Cognitive Characteristics",
+        "url": "http://purl.org/ontology/cco/core#",
+        "description": "Cognitive Characteristics Ontology — vocabulary for describing cognitive patterns, their temporal dynamics, and origins."
+      },
+      {
+        "prefix": "bdi",
+        "label": "BDI Agent Architecture",
+        "url": "https://w3id.org/fossr/ontology/bdi/",
+        "description": "Formal framework modelling the Belief-Desire-Intention (BDI) architecture for rational agents."
+      }
+    ]
+  },
+  {
+    "id": "engineering",
+    "name": "Engineering, IoT & built environment",
+    "color": {
+      "bg": "#E6F1FB",
+      "border": "#378ADD",
+      "text": "#0C447C",
+      "tagBg": "#B5D4F4",
+      "tagText": "#042C53"
+    },
+    "items": [
+      {
+        "prefix": "dtw",
+        "label": "Digital Twin",
+        "url": "https://w3id.org/def/dtw#",
+        "description": "Digital Twin ontology defining Digital Twins, Semantic Digital Twins, and aggregations using Web of Things."
+      },
+      {
+        "prefix": "op",
+        "label": "Observable Properties",
+        "url": "http://environment.data.gov.au/def/op",
+        "description": "General-purpose ontology for observable properties supporting qualitative and quantitative descriptions."
+      },
+      {
+        "prefix": "airo",
+        "label": "AIRO AI Risk (AI Act)",
+        "url": "https://w3id.org/airo",
+        "description": "AI Risk Ontology representing AI risk concepts and relations based on the EU AI Act draft and ISO 31000."
+      },
+      {
+        "prefix": "ceon-actorODP",
+        "label": "CEON Actor ODP",
+        "url": "http://w3id.org/CEON/ontology/actorODP/",
+        "description": "Core ODP of the CEON ontology network defining aspects of the actor concept."
+      },
+      {
+        "prefix": "ceon-resourceODP",
+        "label": "CEON Resource ODP",
+        "url": "http://w3id.org/CEON/ontology/resourceODP/",
+        "description": "Core ODP of the CEON ontology network defining aspects of the resource concept."
+      },
+      {
+        "prefix": "ceon-value",
+        "label": "CEON Value ODP",
+        "url": "http://w3id.org/CEON/ontology/value/",
+        "description": "Core ODP of the CEON ontology network defining aspects of the value concept."
+      }
+    ]
+  },
+  {
+    "id": "collections",
+    "name": "Collections, holdings & legal",
+    "color": {
+      "bg": "#FAECE7",
+      "border": "#D85A30",
+      "text": "#712B13",
+      "tagBg": "#F5C4B3",
+      "tagText": "#4A1B0C"
+    },
+    "items": [
+      {
+        "prefix": "coll",
+        "label": "Collections Ontology",
+        "url": "http://purl.org/co",
+        "description": "CO defines unordered (Set, Bag) and ordered (List) collections, inspired by Drummond et al.'s OWL sequences work."
+      },
+      {
+        "prefix": "gleif-L1",
+        "label": "GLEIF Legal Entity",
+        "url": "https://www.gleif.org/ontology/L1/",
+        "description": "Ontology for Legal Entity Identifier (LEI) registration — Level 1 key reference data for legal entities."
+      },
+      {
+        "prefix": "judo",
+        "label": "JudO Judicial Interpretations",
+        "url": "http://purl.org/NET/judo",
+        "description": "OWL ontology library modelling judicial interpretations, legal subsumption, interpretative acts, and legal reasoning processes."
+      },
+      {
+        "prefix": "lkif",
+        "label": "LKIF Core",
+        "url": "http://www.estrellaproject.org/lkif-core",
+        "description": "Legal Knowledge Interchange Format ontology including norms, argumentation, interpretations, legal roles, and reasoning structures."
+      },
+      {
+        "prefix": "gleif-L2",
+        "label": "GLEIF Parent relationships",
+        "url": "https://www.gleif.org/ontology/L2/",
+        "description": "Ontology for LEI parent relationships: direct and ultimate accounting consolidating parents."
+      },
+      {
+        "prefix": "gleif-base",
+        "label": "GLEIF Base",
+        "url": "https://www.gleif.org/ontology/Base/",
+        "description": "Generic concepts reused by other GLEIF ontologies: legal entities, relationships, statuses, names, and addresses."
+      },
+      {
+        "prefix": "gleif-elf",
+        "label": "GLEIF Entity Legal Form",
+        "url": "https://www.gleif.org/ontology/EntityLegalForm/",
+        "description": "Ontology for Entity Legal Forms and their abbreviations by jurisdiction, based on ISO 20275."
+      },
+      {
+        "prefix": "gleif-ra",
+        "label": "GLEIF Registration Authority",
+        "url": "https://www.gleif.org/ontology/RegistrationAuthority/",
+        "description": "Concepts for business registries including the jurisdictions they serve."
+      },
+      {
+        "prefix": "holding",
+        "label": "Library Holdings",
+        "url": "http://purl.org/ontology/holding",
+        "description": "Vocabulary to express library holdings in RDF."
+      },
+      {
+        "prefix": "pico",
+        "label": "PICO Evidence Model",
+        "url": "http://data.cochrane.org/ontologies/pico/",
+        "description": "Machine-accessible PICO framework for describing evidence: Population, Intervention, Comparison, Outcome."
+      },
+      {
+        "prefix": "nyon",
+        "label": "NYON Legal concepts",
+        "url": "https://w3id.org/def/nyon#",
+        "description": "Ontology representing concepts in the legal domain."
+      },
+      {
+        "prefix": "sh",
+        "label": "SHACL Shapes",
+        "url": "http://www.w3.org/ns/shacl#",
+        "description": "W3C vocabulary defining terms used in SHACL — Shapes Constraint Language for validating RDF graphs."
+      }
+    ]
+  },
+  {
+    "id": "opinions",
+    "name": "Opinions, argumentation & interpretation",
+    "color": {
+      "bg": "#EAF3DE",
+      "border": "#3B6D11",
+      "text": "#27500A",
+      "tagBg": "#97C459",
+      "tagText": "#173404"
+    },
+    "items": [
+      {
+        "prefix": "crminf",
+        "label": "CRMinf Argumentation Model",
+        "url": "http://www.cidoc-crm.org/extensions/crminf/",
+        "description": "CIDOC CRM extension for modelling inference making, beliefs, propositions, argumentation structures, and interpretation processes."
+      },
+      {
+        "prefix": "crmsci",
+        "label": "CRMsci Scientific Observation",
+        "url": "http://www.cidoc-crm.org/extensions/crmsci/",
+        "description": "CIDOC CRM extension for scientific observations, measurements, hypothesis formation, evidence evaluation, and interpretative scientific reasoning."
+      },
+      {
+        "prefix": "amo",
+        "label": "Argument Model Ontology",
+        "url": "http://purl.org/spar/amo",
+        "description": "Ontology implementing structured argumentation patterns including claims, warrants, rebuttals, evidence, and supports."
+      },
+      {
+        "prefix": "arg",
+        "label": "Argument Interchange Format",
+        "url": "http://www.arg.dundee.ac.uk/aif#",
+        "description": "Ontology for representing argument structures, inference nodes, conflicts, premises, and conclusions in computational argumentation."
+      },
+      {
+        "prefix": "hico",
+        "label": "HiCO Historical Context",
+        "url": "https://marilenadaquino.github.io/hico/",
+        "description": "Ontology for representing the hermeneutical context of interpretative acts, including criteria, motivations, and source attributions."
+      },
+      {
+        "prefix": "sao",
+        "label": "SALT Annotation",
+        "url": "http://salt.semanticauthoring.org/ontologies/sao",
+        "description": "Ontology connecting rhetorical and argumentative structures with textual fragments and scholarly discourse."
+      },
+      {
+        "prefix": "marl",
+        "label": "Marl Opinion/Sentiment",
+        "url": "http://www.gsi.dit.upm.es/ontologies/marl/ns",
+        "description": "Schema for modelling subjective opinions, sentiment polarity, and evaluative judgements expressed by agents."
+      }
+    ]
+  },
+  {
+    "id": "archives",
+    "name": "Archives, records & archival description",
+    "color": {
+      "bg": "#F1EFE8",
+      "border": "#5F5E5A",
+      "text": "#444441",
+      "tagBg": "#B4B2A9",
+      "tagText": "#2C2C2A"
+    },
+    "items": [
+      {
+        "prefix": "rico",
+        "label": "RiC-O Records in Contexts",
+        "url": "https://www.ica.org/standards/RiC/ontology",
+        "description": "ICA OWL 2 ontology for describing archival record resources — formal representation of the RiC Conceptual Model (RiC-CM). Version 1.1 released May 2025."
+      },
+      {
+        "prefix": "eac-cpf",
+        "label": "EAC-CPF Archival Agents",
+        "url": "http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/",
+        "description": "OWL ontology derived from the EAC-CPF XML schema (IBC Emilia-Romagna / Regesta.exe) for encoding names and contexts of creators of archival materials."
+      },
+      {
+        "prefix": "oad",
+        "label": "OAD Archival Description",
+        "url": "http://culturalis.org/oad#",
+        "description": "Ontology of Archival Description (2012, ReLOAD project / Archivio Centrale dello Stato, IBC, Regesta.exe) — OWL model covering common archival metadata elements, integrated with an ISAD(G) SKOS ontology."
+      },
+      {
+        "prefix": "ocsa",
+        "label": "OCSA Cultural Organisations",
+        "url": "http://culturalis.org/ocsa/1.0#",
+        "description": "Ontology of Cultural Organizations' Services and Access (2013, ReLOAD project) — describes services, facilities, and activities of institutions acting as archival holders."
+      },
+      {
+        "prefix": "san-lod",
+        "label": "SAN Archival",
+        "url": "http://dati.san.beniculturali.it/SAN/",
+        "description": "Ontology for the Italian National Archive System (SAN) linked data portal, covering fonds, archival institutions, and their relationships."
+      },
+      {
+        "prefix": "archonto",
+        "label": "ArchOnto (EPISA)",
+        "url": "https://rdm.inesctec.pt/dataset/cs-2022-001",
+        "description": "CIDOC-CRM-based linked data model for archives developed in the Portuguese EPISA project (INESCTEC / Portuguese National Archives, Torre do Tombo). Modular: extends CRM with archival entities (ARE) and properties (ARP), plus an ISAD Ontology module."
+      },
+      {
+        "prefix": "arkivo",
+        "label": "ARKIVO archival collections",
+        "url": "https://ceur-ws.org/Vol-2214/paper12.pdf",
+        "description": "OWL 2 ontology (43 classes, 24 object properties) modelling archival description of historical document collections, developed for the Józef Piłsudski Institute of America collection."
+      },
+      {
+        "prefix": "p-plan",
+        "label": "P-Plan (archival plans)",
+        "url": "http://purl.org/net/p-plan#",
+        "description": "PROV-O extension for representing plans and their execution, applicable to archival workflows such as appraisal, ingest, and description processes."
+      }
+    ]
+  },
+  {
+    "id": "multimedia",
+    "name": "Multimedia Digital Object Representation in RDF",
+    "color": {
+      "bg": "#E8F1F2",
+      "border": "#4B8B9B",
+      "text": "#2A4D5C",
+      "tagBg": "#B9D8E0",
+      "tagText": "#1A3B47"
+    },
+    "items": [
+      {
+        "prefix": "scotch",
+        "label": "SCOTCH (3D Visualization)",
+        "url": "https://wiki.digitalclassicist.org/SCOTCH",
+        "description": "Semantic Collaborative Ontology for Three-dimensional visualization of Cultural Heritage. Designed to document 3D visualizations, connecting parts of a 3D model internally and linking them to external data about physical remains [citation:6]."
+      },
+      {
+        "prefix": "chad-kg",
+        "label": "CHAD-AP (Acquisition & Digitization)",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1552628326000086",
+        "description": "Cultural Heritage Acquisition and Digitization Application Profile. OWL ontology based on CIDOC-CRM, LRMoo, and CRMdig. Places digitization events (including 3D capture) and paradata at the core of the model. Used for the Ulisse Aldrovandi digital twin [citation:8]."
+      },
+      {
+        "prefix": "harvana",
+        "label": "HarvANA (3D Annotations)",
+        "url": "https://www.infona.pl/resource/bwmeta1.element.elsevier-553266bb-b939-3c81-b7cc-5e86959a0826",
+        "description": "System and RDF model for harvesting community annotations (tags) on 3D museum artefacts. Uses an ontology-directed folksonomy to represent user-generated content linked to specific 3D objects, enhancing discovery [citation:7]."
+      },
+      {
+        "prefix": "3d-ps",
+        "label": "3D Point Cloud Segmentation",
+        "url": "https://doaj.org/article/e3b296d46ccc4d95b1a6392200c5ad5a",
+        "description": "Semantic segmentation workflow for 3D point clouds (applied to San Giovanni a Porta Latina, Rome). Converts spatial classifications (constructive elements, materials, decay) into RDF/SPARQL-queryable formats for digital twins [citation:3]."
+      },
+      {
+        "prefix": "oa-entry",
+        "label": "OA Entry Ontology",
+        "url": "https://github.com/vedph/oa-entry",
+        "description": "OWL ontology developed for the Zeri Photo Archive project (University of Bologna). Models the Italian Scheda OA (Work of Art Entry) standard, capturing detailed descriptions of artworks including their physical characteristics, iconography, and state of preservation. Complements CIDOC-CRM for fine-grained art documentation [citation:2][citation:5]."
+      },
+  
+      {
+        "prefix": "f-entry",
+        "label": "F Entry Ontology (Photography)",
+        "url": "https://github.com/vedph/f-entry",
+        "description": "OWL ontology developed alongside OA Entry for the Zeri Photo Archive. Models the Italian Scheda F (Photography Entry) standard, designed specifically for describing photographs as cultural heritage objects—including technical parameters (negative type, printing process), physical condition, and the relationship between photographic reproductions and their source artworks [citation:2][citation:7][citation:10]."
+      },
+      {
+    "prefix": "iconclass",
+    "label": "ICONCLASS",
+    "url": "http://iconclass.org/",
+    "description": "Multilingual SKOS-based linked data service and de facto global standard for the subject classification of cultural heritage content, used for the description and retrieval of subjects in images and art.[reference:2][reference:3] Available as LOD in SKOS form since circa 2015 with over 1 million SKOS nodes across nine languages, retrievable by appending .rdf to a notation (e.g., http://iconclass.org/xyz.rdf).[reference:4][reference:5]"
+  },{
+    "prefix": "aat",
+    "label": "Art & Architecture Thesaurus (Getty)",
+    "url": "http://vocab.getty.edu/ontology#",
+    "description": "Getty Vocabulary Program OWL ontology for the Art & Architecture Thesaurus (AAT). Defines 14 classes (gvp:Concept, gvp:Facet, gvp:GuideTerm, etc.) and 322 properties for describing concepts, hierarchies, and relationships in art and architecture terminology.[reference:6] Extends SKOS with domain-specific classes and relations; available under ODC-By 1.0 license.[reference:7]"
+  },
+  {
+    "prefix": "niao",
+    "label": "Narrative Image Annotation Ontology",
+    "url": "https://research.vu.nl/en/publications/an-ontology-model-for-narrative-image-annotation-in-the-field-of-",
+    "description": "OWL ontology model for semantic annotation of narrative paintings and cultural heritage images. Combines Open Annotation Collaboration (OAC) framework with Plot as core element, mapping annotated regions to high-level semantics. Designed to represent plots and actions with appropriate granularity for temporal-spatial information modeling in cultural heritage.[reference:8] Supports annotation storage as RDF, CSV, and JSON via companion NIA tool.[reference:9]"
+  },
+  {
+    "prefix": "linkedart",
+    "label": "Linked Art Metadata Application Profile",
+    "url": "https://linked.art/",
+    "description": "CIDOC-CRM-based metadata application profile for art museum data exchange. Streamlines the full CRM complexity to cover 90% of use cases for 90% of organizations with only 10% of its complexity.[reference:10] Focuses on three core entity types (Objects, Actors, and Events) and practical implementation patterns adopted by institutions including Getty, Smithsonian, and The Met.[reference:11][reference:12]"
+  },
+      {
+        "prefix": "iiif",
+        "label": "IIIF Presentation API Ontology",
+        "url": "https://iiif.io/api/presentation/3.0/",
+        "description": "RDF vocabulary for the International Image Interoperability Framework (IIIF) Presentation API. Defines key classes for structuring digitized objects: Canvas (individual view/page), Manifest (complete object), Sequence (ordering of views), Range (structural hierarchy like chapters), Layer (grouping annotations), AnnotationList, and viewing hints (paged, continuous, facing-pages). IIIF Presentation 2.0+ APIs are designed as JSON-LD, making them native RDF ontologies for image-based cultural heritage resources [citation:3][citation:9]."
+      },
+      {
+        "prefix": "webanno",
+        "label": "Web Annotation Ontology (W3C)",
+        "url": "https://www.w3.org/ns/oa",
+        "description": "W3C Recommendation for annotating web resources, including multimedia. Defines core classes: Annotation (container for annotation), Body (annotation content), Target (annotated resource), as well as specific selectors (FragmentSelector, CssSelector, XPathSelector) and motivation types (describing, commenting, tagging, identifying). Widely used for IIIF annotations and more broadly for image/audio/video fragment annotation [citation:1]."
+      },
+      {
+        "prefix": "ma-ont",
+        "label": "W3C Media Annotation Ontology (MA-ONT)",
+        "url": "https://www.w3.org/TR/mediaont-10/",
+        "description": "W3C Recommendation providing a core vocabulary for describing multimedia resources (audio, video, images) across formats. Defines properties covering: technical aspects (duration, frame size, encoding, bitrate, sample rate), content description (title, description, language), creation context (location, date, creator), publishing metadata (copyright, policy, target audience), and relationships between media resources. Harmonizes MPEG-7, EBUCore, Dublin Core, and other schemas [citation:2][citation:5]."
+      },
+      {
+        "prefix": "ebucore",
+        "label": "EBUCore (Audiovisual Metadata)",
+        "url": "https://www.ebu.ch/metadata/ontologies/ebucore/",
+        "description": "EBU (European Broadcasting Union) ontology for describing audiovisual resources. Covers technical properties (format, codec, quality ratings), structural metadata (segments, parts, collections), and descriptive metadata (creator, genre, coverage). Extends MA-ONT and is aligned with schema.org. Includes EBUSport extension for sports media and CCDM for broadcast workflow integration. Particularly strong for born-digital video, broadcast archives, and time-based media [citation:5]."
+      },
+      {
+        "prefix": "lio",
+        "label": "Lightweight Image Onto.",
+        "url": "http://purl.org/net/lio",
+        "description": "Lightweight Ontology for Describing Images."
+      },
+      {
+        "prefix": "vra",
+        "label": "VRA Core",
+        "url": "http://purl.org/vra/core",
+        "description": "VRA Core 4.0 — vocabulary for describing works of visual culture and their images."
+      }
+    ]
+  },{
+    "id": "performing-arts",
+    "name": "Theatre, Opera & Drama Representation",
+    "color": {
+        "bg": "#FAF0E6",
+        "border": "#8B4513",
+        "text": "#5C2E0B",
+        "tagBg": "#E5C5A5",
+        "tagText": "#3B1E07"
+    },
+    "items": [
+        {
+            "prefix": "corago",
+            "label": "Corago Semantic Model (Corago SM)",
+            "url": "http://corago.unibo.it",
+            "description": "Linked Data and formal ontology for historical opera data (16th–20th century). Aligned with FRBRoo (FRBR object-oriented) and CIDOC-CRM to describe works, performances, librettos, and persons."
+        },
+        {
+            "prefix": "drammar",
+            "label": "Drammar (Comprehensive Ontology of Drama)",
+            "url": "http://www.purl.org/drammar",
+            "description": "OWL ontology (CC BY-ND 4.0) that describes and encodes core dramatic qualities as intangible cultural heritage, avoiding references to style and artistic qualities to represent cross-media dramatic elements. Uses a three-layered design (action, motivational, dramatic) mapped to characters' intentions and actions."
+        },
+        {
+            "prefix": "hyperstage",
+            "label": "HYPERSTAGE Ontology",
+            "url": "https://site.unibo.it/hyperstage/en",
+            "description": "Under-development open knowledge base and ontology (PRIN 2022, University of Bologna) for semantic reconstruction of theatrical performances. Based on the 'Theatrical Performance' concept, designed to enable interoperability among decentralized Italian digital theatre archives and support immersive VR reconstructions."
+        },
+        {
+            "prefix": "wikibase-theatre",
+            "label": "Wikibase Theatre Production Model",
+            "url": "https://openhumanitiesdata.metajnl.com/articles/10.5334/johd.434",
+            "description": "Data model implemented in Wikibase for Linked Open Data representation of theatre productions, covering structural and scenographic aspects including costumes, spatial settings, and interactive audience elements. Enables complex SPARQL queries on productions, roles, and casts."
+        },
+        {
+            "prefix": "capdata-opera",
+            "label": "CapData Opéra Ontology",
+            "url": "https://capdata.huma-num.fr/",
+            "description": "Opera houses ontology designed to define a common vocabulary and data interoperability for creative works and performances exchanged between opera houses. Aligned with schema.org and designed to promote interoperability."
+        },
+        {
+            "prefix": "sshm",
+            "label": "SSHOC Performing Arts Model (SSHOCro)",
+            "url": "https://explore.openaire.eu/display/project/SSHOC",
+            "description": "CIDOC-CRM extension for performing arts data modeling, inheriting an event-centric orientation for representing performance-related information."
+        }
+    ]
+}
+]
