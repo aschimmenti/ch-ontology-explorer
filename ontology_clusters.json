@@ -1,7 +1,7 @@
 [
   {
     "id": "upper",
-    "name": "Upper-level & foundational",
+    "name": "Upper-level, OPDs & foundational ontologies",
     "color": {
       "bg": "#E1F5EE",
       "border": "#0F6E56",
@@ -15,30 +15,6 @@
         "label": "DOLCE+DnS Ultralite",
         "url": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
         "description": "Simplified upper-level ontology based on DOLCE Lite-Plus, widely used as a foundational layer in knowledge engineering."
-      },
-      {
-        "prefix": "owl",
-        "label": "OWL 2",
-        "url": "http://www.w3.org/2002/07/owl",
-        "description": "W3C Web Ontology Language — describes the built-in classes and properties forming the basis of RDF/XML OWL 2 syntax."
-      },
-      {
-        "prefix": "rdf",
-        "label": "RDF Syntax",
-        "url": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "description": "Core RDF vocabulary for the RDF data model: type, Property, subject, predicate, object, etc."
-      },
-      {
-        "prefix": "rdfs",
-        "label": "RDF Schema",
-        "url": "http://www.w3.org/2000/01/rdf-schema#",
-        "description": "Data-modelling vocabulary extending RDF: classes, subclass/subproperty relations, domain, range, label, comment."
-      },
-      {
-        "prefix": "xsd",
-        "label": "XML Schema Datatypes",
-        "url": "http://www.w3.org/2001/XMLSchema#",
-        "description": "XML Schema primitive and derived datatypes used as RDF literal datatypes (string, integer, date, boolean, etc.)."
       },
       {
         "prefix": "skos",
@@ -655,7 +631,7 @@
   },
   {
     "id": "ch",
-    "name": "Cultural heritage (specific)",
+    "name": "Cultural heritage (generic)",
     "color": {
       "bg": "#FAECE7",
       "border": "#993C1D",
@@ -771,12 +747,18 @@
         "label": "INTRO Intertextuality",
         "url": "https://w3id.org/lso/intro/beta202408",
         "description": "Ontology for intertextual, interpictorial, and intermedial relations in literary and art studies."
-      }
+      },
+        {
+    "prefix": "linkedart",
+    "label": "Linked Art Metadata Application Profile",
+    "url": "https://linked.art/",
+    "description": "CIDOC CRM-based metadata application profile for art museum data exchange. Streamlines the full CRM complexity to cover 90% of use cases for 90% of organizations with only 10% of its complexity.[reference:10] Focuses on three core entity types (Objects, Actors, and Events) and practical implementation patterns adopted by institutions including Getty, Smithsonian, and The Met.[reference:11][reference:12]"
+  }
     ]
   },
   {
     "id": "prov",
-    "name": "Provenance, versioning & rights",
+    "name": "Provenance & versioning",
     "color": {
       "bg": "#FBEAF0",
       "border": "#993556",
@@ -802,72 +784,6 @@
         "label": "P-Plan",
         "url": "http://purl.org/net/p-plan#",
         "description": "PROV-O extension for representing scientific plans (bundles of steps and variables) alongside execution records."
-      },
-      {
-        "prefix": "cc",
-        "label": "Creative Commons REL",
-        "url": "http://creativecommons.org/ns",
-        "description": "CC Rights Expression Language for describing copyright licenses in RDF."
-      },
-      {
-        "prefix": "oecc",
-        "label": "OeGov CC Ontology",
-        "url": "http://www.oegov.org/core/owl/cc",
-        "description": "Creative Commons ontology extending the CC RDF schema for the OeGov context."
-      },
-      {
-        "prefix": "odrl",
-        "label": "ODRL Rights Language",
-        "url": "http://www.w3.org/ns/odrl/2/",
-        "description": "Open Digital Rights Language — flexible, interoperable mechanisms for digital content rights in publishing and distribution."
-      },
-      {
-        "prefix": "odrs",
-        "label": "Open Data Rights",
-        "url": "http://schema.theodi.org/odrs",
-        "description": "ODI vocabulary supporting machine-readable rights statements for open data publication."
-      },
-      {
-        "prefix": "cro",
-        "label": "Copyright Ontology",
-        "url": "http://rhizomik.net/ontologies/copyrightonto.owl",
-        "description": "Ontology for copyright-aware Digital Rights Management (DRM) systems."
-      },
-      {
-        "prefix": "limoo",
-        "label": "LiMo Licenses",
-        "url": "http://purl.org/LiMo/0.1#",
-        "description": "Vocabulary for describing software and content licenses as linked data."
-      },
-      {
-        "prefix": "tro",
-        "label": "TRO Transparency Relations",
-        "url": "https://w3id.org/TRO",
-        "description": "Vocabulary representing transparency relations typically between powerful people or institutions."
-      },
-      {
-        "prefix": "gdprov",
-        "label": "GDPRov",
-        "url": "https://w3id.org/GDPRov",
-        "description": "OWL2 ontology for provenance metadata of consent and data lifecycles towards documenting GDPR compliance."
-      },
-      {
-        "prefix": "pd",
-        "label": "DPV Personal Data",
-        "url": "https://w3id.org/dpv/pd",
-        "description": "Extension to the Data Privacy Vocabulary providing additional categories of personal data."
-      },
-      {
-        "prefix": "munc",
-        "label": "MUNC Uncertainty",
-        "url": "http://ns.inria.fr/munc/",
-        "description": "OWL vocabulary for describing uncertainty metadata about RDF statements."
-      },
-      {
-        "prefix": "orca",
-        "label": "ORCA Certainty/Attribution",
-        "url": "http://vocab.deri.ie/orca",
-        "description": "Ontology of Reasoning, Certainty and Attribution for characterising how information is known and its source."
       }
     ]
   },
@@ -1324,13 +1240,24 @@
         "label": "Digital Twin",
         "url": "https://w3id.org/def/dtw#",
         "description": "Digital Twin ontology defining Digital Twins, Semantic Digital Twins, and aggregations using Web of Things."
-      }
+      },
+      {
+        "prefix": "dem",
+        "label": "Digital Ecosystem Model Ontology",
+        "url": "https://github.com/pericles-project/DEM",
+        "description": "The DEM is an ontology that uses the Web Ontology Language (OWL). A DEM supports the analysis and management of a Digital Ecosystem. A Digital Ecosystem (DE) should be interpreted as a concept with the purpose for analysing and modelling the ability of infrastructure to maintain the usefulness of digital objects. A digital ecosystem consists of a set of the entities and dependencies influencing or necessary for a successful use at a later point in time."
+      },
+      {
+        "prefix": "hdto",
+        "label": "Heritage Digital Twin Ontology",
+        "url": "https://github.com/ECHOES-ECCCH/HDTO-Heritage-Digital-Twin-Ontology/blob/main/ECHOES-HDTO-v0.2.pdf",
+        "description": "A novel ontology for cultural heritage based on the concept of digital twin. The ontology, called Heritage Digital Twin ontology, is a compatible extension of the well-known CIDOC CRM ISO standard for cultural heritage documentation and incorporates all the different documentation systems presently in use for cultural heritage documentation."  }
      
     ]
   },
   {
-    "id": "collections",
-    "name": "Collections, holdings & legal",
+    "id": "legal",
+    "name": "Rights, IPR & regulatory aspects",
     "color": {
       "bg": "#FAECE7",
       "border": "#D85A30",
@@ -1340,10 +1267,72 @@
     },
     "items": [
       {
-        "prefix": "coll",
-        "label": "Collections Ontology",
-        "url": "http://purl.org/co",
-        "description": "CO defines unordered (Set, Bag) and ordered (List) collections, inspired by Drummond et al.'s OWL sequences work."
+        "prefix": "ogdl4m",
+        "label": "OGDL4M",
+        "url": "https://github.com/martynui/OGDL4M",
+        "description": "Ontology of Open Government Data Licenses Framework for a Mash-up Model (OGDL4M), version 0.1 Please visit Wiki section for further information."
+
+      },
+  {
+    "prefix": "cacao",
+    "label": "Cultural Artefact Contextual Ontology",
+    "url": "http://w3id.org/cacao",
+    "description": "The CACAO ontology was developed in collaboration with four CH institutes, validating its applicability and understandability across diverse data types. The ontology extends CIDOC-CRM by integrating ODRL for structured rights expression and by introducing new, more specific concepts for detailed contextual information."  
+},
+
+      {
+        "prefix": "cc",
+        "label": "Creative Commons REL",
+        "url": "http://creativecommons.org/ns",
+        "description": "CC Rights Expression Language for describing copyright licenses in RDF."
+      },
+      {
+        "prefix": "oecc",
+        "label": "OeGov CC Ontology",
+        "url": "http://www.oegov.org/core/owl/cc",
+        "description": "Creative Commons ontology extending the CC RDF schema for the OeGov context."
+      },
+      {
+        "prefix": "odrl",
+        "label": "ODRL Rights Language",
+        "url": "http://www.w3.org/ns/odrl/2/",
+        "description": "Open Digital Rights Language — flexible, interoperable mechanisms for digital content rights in publishing and distribution."
+      },
+      {
+        "prefix": "odrs",
+        "label": "Open Data Rights",
+        "url": "http://schema.theodi.org/odrs",
+        "description": "ODI vocabulary supporting machine-readable rights statements for open data publication."
+      },
+      {
+        "prefix": "cro",
+        "label": "Copyright Ontology",
+        "url": "http://rhizomik.net/ontologies/copyrightonto.owl",
+        "description": "Ontology for copyright-aware Digital Rights Management (DRM) systems."
+      },
+      {
+        "prefix": "limoo",
+        "label": "LiMo Licenses",
+        "url": "http://purl.org/LiMo/0.1#",
+        "description": "Vocabulary for describing software and content licenses as linked data."
+      },
+      {
+        "prefix": "tro",
+        "label": "TRO Transparency Relations",
+        "url": "https://w3id.org/TRO",
+        "description": "Vocabulary representing transparency relations typically between powerful people or institutions."
+      },
+      {
+        "prefix": "gdprov",
+        "label": "GDPRov",
+        "url": "https://w3id.org/GDPRov",
+        "description": "OWL2 ontology for provenance metadata of consent and data lifecycles towards documenting GDPR compliance."
+      },
+      {
+        "prefix": "pd",
+        "label": "DPV Personal Data",
+        "url": "https://w3id.org/dpv/pd",
+        "description": "Extension to the Data Privacy Vocabulary providing additional categories of personal data."
       },
       {
         "prefix": "gleif-L1",
@@ -1388,12 +1377,6 @@
         "description": "Concepts for business registries including the jurisdictions they serve."
       },
       {
-        "prefix": "holding",
-        "label": "Library Holdings",
-        "url": "http://purl.org/ontology/holding",
-        "description": "Vocabulary to express library holdings in RDF."
-      },
-      {
         "prefix": "pico",
         "label": "PICO Evidence Model",
         "url": "http://data.cochrane.org/ontologies/pico/",
@@ -1410,18 +1393,40 @@
         "label": "NYON Legal concepts",
         "url": "https://w3id.org/def/nyon#",
         "description": "Ontology representing concepts in the legal domain."
-      },
-      {
-        "prefix": "sh",
-        "label": "SHACL Shapes",
-        "url": "http://www.w3.org/ns/shacl#",
-        "description": "W3C vocabulary defining terms used in SHACL — Shapes Constraint Language for validating RDF graphs."
       }
     ]
   },
   {
+    "id": "collections",
+    "name": "Collections",
+    "color": {
+      "bg": "#FAECE7",
+      "border": "#D85A30",
+      "text": "#712B13",
+      "tagBg": "#F5C4B3",
+      "tagText": "#4A1B0C"
+    },
+    "items": [
+     
+      {
+        "prefix": "timbus",
+        "label": "Timbus and related ontologies",
+        "url": "https://www.timbusproject.net/portal/publications/ontologies/",
+        "description": "A set of ontolgoies developed in the Timbus project for describing digital preservation, including the Timbus Preservation Ontology and related ontologies for describing digital objects, preservation actions, and preservation metadata."
+
+      },
+      {
+        "prefix": "coll",
+        "label": "Collections Ontology",
+        "url": "http://purl.org/co",
+        "description": "CO defines unordered (Set, Bag) and ordered (List) collections, inspired by Drummond et al.'s OWL sequences work."
+      }
+    ]
+
+  },
+  {
     "id": "opinions",
-    "name": "Opinions, argumentation & interpretation",
+    "name": "Opinions, argumentation, interpretation & uncertainty",
     "color": {
       "bg": "#EAF3DE",
       "border": "#3B6D11",
@@ -1430,18 +1435,6 @@
       "tagText": "#173404"
     },
     "items": [
-      {
-        "prefix": "crminf",
-        "label": "CRMinf Argumentation Model",
-        "url": "http://www.cidoc-crm.org/extensions/crminf/",
-        "description": "CIDOC CRM extension for modelling inference making, beliefs, propositions, argumentation structures, and interpretation processes."
-      },
-      {
-        "prefix": "crmsci",
-        "label": "CRMsci Scientific Observation",
-        "url": "http://www.cidoc-crm.org/extensions/crmsci/",
-        "description": "CIDOC CRM extension for scientific observations, measurements, hypothesis formation, evidence evaluation, and interpretative scientific reasoning."
-      },
       {
         "prefix": "amo",
         "label": "Argument Model Ontology",
@@ -1477,6 +1470,18 @@
         "label": "Marl Opinion/Sentiment",
         "url": "http://www.gsi.dit.upm.es/ontologies/marl/ns",
         "description": "Schema for modelling subjective opinions, sentiment polarity, and evaluative judgements expressed by agents."
+      },
+      {
+        "prefix": "munc",
+        "label": "MUNC Uncertainty",
+        "url": "http://ns.inria.fr/munc/",
+        "description": "OWL vocabulary for describing uncertainty metadata about RDF statements."
+      },
+      {
+        "prefix": "orca",
+        "label": "ORCA Certainty/Attribution",
+        "url": "http://vocab.deri.ie/orca",
+        "description": "Ontology of Reasoning, Certainty and Attribution for characterising how information is known and its source."
       }
     ]
   },
@@ -1606,12 +1611,7 @@
     "url": "https://research.vu.nl/en/publications/an-ontology-model-for-narrative-image-annotation-in-the-field-of-",
     "description": "OWL ontology model for semantic annotation of narrative paintings and cultural heritage images. Combines Open Annotation Collaboration (OAC) framework with Plot as core element, mapping annotated regions to high-level semantics. Designed to represent plots and actions with appropriate granularity for temporal-spatial information modeling in cultural heritage.[reference:8] Supports annotation storage as RDF, CSV, and JSON via companion NIA tool.[reference:9]"
   },
-  {
-    "prefix": "linkedart",
-    "label": "Linked Art Metadata Application Profile",
-    "url": "https://linked.art/",
-    "description": "CIDOC-CRM-based metadata application profile for art museum data exchange. Streamlines the full CRM complexity to cover 90% of use cases for 90% of organizations with only 10% of its complexity.[reference:10] Focuses on three core entity types (Objects, Actors, and Events) and practical implementation patterns adopted by institutions including Getty, Smithsonian, and The Met.[reference:11][reference:12]"
-  },
+
       {
         "prefix": "iiif",
         "label": "IIIF Presentation API Ontology",
